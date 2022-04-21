@@ -5,6 +5,10 @@
 }
 
 h1,
+h2,
+h3,
+hr,
+input,
 p {
     margin: 0;
 }
@@ -21,24 +25,24 @@ p {
 }
 
 .header .container {
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.logo-holder {
-    float: left;
-}
-
-.nav-holder {
-    float: right;
-}
-
-.nav {
-    float: left;
+.nav-holder
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .nav-list,
 .btn-list,
-.hero-btn-list
+.hero-btn-list,
+.tools-list,
+.contact-list
 {
     list-style: none;
     padding: 0;
@@ -47,15 +51,10 @@ p {
 
 .nav-list {
     margin: 0 45px 0 -10px;
-    padding: 10px 0;
 }
 
 .btn-list {
     margin: 0 -7px 0 0; 
-}
-
-.btn-list {
-    float: left;
 }
 
 .nav-item,
@@ -149,4 +148,109 @@ p {
     border-left: 7px solid #FF9900;
     display: inline-block;
     padding-right: 8px;
+}
+
+.title {
+    max-width: 539px;
+    margin: 0 auto 54px auto;
+}
+
+.design-title {
+    padding-top: 111px;
+    text-align: center;
+    line-height: 54px;
+    font-size: 36px;
+    color: #2F281E;
+}
+
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 34px;
+}
+
+.tools-item {
+    width: 25%;
+}
+
+.tools-title {
+    padding-top: 30px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #2F281E;
+}
+
+.tools-item .text-holder {
+    padding: 13px 0 26px 0; 
+    margin: 0;
+    max-width: 240px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+
+.btn-item.tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn.btn-tools {
+    font-weight: 700;
+    padding: 15px 34px;
+    margin-bottom: 146px;
+}
+
+.line {
+    background: rgba(188, 208, 229, 0.496913);
+    margin-bottom: 102px;
+}
+
+.footer .logo-holder {
+    margin-bottom: 33px;
+}
+
+.footer-holder,
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+}
+
+.contact-list.first-one {
+    padding-right: 175px;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color: #544837;
+}
+
+.input-holder {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 11px 0 11px 82px;
+}
+
+.input-text {
+    background: #fff;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    margin-bottom: 21px;
+    padding: 15px 76px;
+}
+
+.btn.submit {
+    font-weight: 700;
+    border: none;
+    padding: 7px 0;
+    max-width: 131px;
 }
