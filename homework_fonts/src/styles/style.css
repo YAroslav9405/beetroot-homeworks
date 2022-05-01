@@ -69,10 +69,12 @@ body {
 }
 
 .sidebar {
-    position: sticky;
-    top: 122px;
+    position: fixed;
+    padding-top: 170px;
+    width: 100%;
     left: 0;
     z-index: 3;
+    
 }
 
 .sidebar-list {
@@ -90,10 +92,11 @@ body {
 }
 
 .main-content {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    right: 0;
     z-index: 1;
 }
 
