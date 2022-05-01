@@ -69,20 +69,30 @@ body {
 }
 
 .sidebar {
-    position: fixed;
-    padding-top: 170px;
-    width: 100%;
-    left: 0;
-    z-index: 3;
-
+    background-color: transparent;
+    width: 40%;
+    z-index: 2;
 }
 
 .sidebar-list {
-    padding-left: 9px;
+    position: fixed;
+    padding: 180px 0 0 8px;
+}
+
+.sidebar-list li {
+    position: relative;
+}
+
+.sidebar-list li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    border-bottom: 1px solid #BFBFBF;
 }
 
 .sidebar-item {
-    border-bottom: 1px solid #BFBFBF;
     margin-bottom: 93px;
 }
 
@@ -97,6 +107,7 @@ body {
     flex-wrap: wrap;
     justify-content: flex-end;
     width: 60%;
+    top: 0;
     right: 0;
     z-index: 1;
 }
