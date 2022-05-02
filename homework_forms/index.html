@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="src/styles/fonts.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="title">
+                Create an Account
+            </h1>
+        </div>
+    </header>
+    <main class="main">
+        <section class="create">
+            <div class="container">
+                <form action="#" class="form">
+                    <ul class="form-list">
+                        <li class="form-item">
+                            <ul class="list">
+                                <li class="list-item">
+                                    <div class="name">
+                                        <label for="name" class="label">
+                                            First Name
+                                        </label>
+                                        <input type="text" id="name" class="input">
+                                    </div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="name">
+                                        <label for="last-name" class="label">
+                                            Last Name
+                                        </label>
+                                        <input type="text" id="last-name" class="input">
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="form-item">
+                            <div class="name email">
+                                <label for="email" class="label">
+                                    Email
+                                </label>
+                                <input type="email" id="email" class="input">
+                            </div>
+                            <p class="text">
+                                We'll never share your email with anyone else.
+                            </p>
+                        </li>
+                        <li class="form-item">
+                            <ul class="gender-list">
+                                <li class="gender-item">
+                                    <input type="radio" id="male" name="radio" class="radio">
+                                    <label for="male" class="label gender">
+                                        Male<span></span>
+                                    </label>
+                                </li>
+                                <li class="gender-item">
+                                    <input type="radio" id="female" name="radio"  class="radio" >
+                                    <label for="female" class="label gender">
+                                        Female<span></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="form-item">
+                            <ul class="list">
+                                <li class="list-item">
+                                    <div class="name">
+                                        <label for="select" class="label">
+                                            Country
+                                        </label>
+                                        <select name="country" id="select" class="input">
+                                            <option value="0">Select</option>
+                                            <option value="1">Ukraine</option>
+                                            <option value="2">Germany</option>
+                                            <option value="3">Scotland</option>
+                                            <option value="4">England</option>
+                                            <option value="5">France</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="name">
+                                        <label for="city" class="label">
+                                            City
+                                        </label>
+                                        <input type="text" id="city" class="input"> 
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="form-item">
+                            <textarea name="area" id="area" class="input max" ></textarea>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-list">
+                <li class="item singup">
+                    <p class="text footer">
+                        By clicking the 'Sign Up' button, you confirm that you accept our
+                        <a href="#" class="link"> 
+                        Terms of Use
+                        </a> and 
+                        <a href="#" class="link">
+                            Privacy Policy
+                        </a>                      .
+                    </p>
+                </li>
+                <li class="item login">
+                    <p class="text login">
+                        Have an account?<a href="#" class="link login">Log In</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
