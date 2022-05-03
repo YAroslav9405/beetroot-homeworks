@@ -1,0 +1,178 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1,
+ul,
+::after,
+::before,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   font-family: 'Inter', sans-serif;
+}
+
+.title {
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1C1C1C;
+}
+
+.container {
+    width: 100%;
+    max-width: 530px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.form-item {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.name.email {
+    margin-bottom: 7px;
+}
+
+.gender-item {
+    list-style: none;
+}
+
+.list-item {
+    list-style: none;
+    width: 245px;
+    margin: 0;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gender-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.label {
+    font-size: 15px;
+    line-height: 22px;
+    color: #545454;
+    padding-bottom: 7px;
+} 
+
+.gender-item label::before {
+    content: '';
+    position: absolute;
+    border:  1px solid #E4E4E4;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    border-radius: 100%;
+}
+
+.gender-item input:checked + label::after {
+    content: '';
+    position: absolute;
+    background-color: #007BFF;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    border-radius: 100%;
+}
+
+.gender-item input:checked + label span::before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 8px;
+    height: 8px;
+    left: 10px;
+    border-radius: 100%;
+    transform: translate(-50%, -50%) ;
+    z-index: 1;
+}
+
+.radio {
+    display: none;
+}
+
+.label.gender {
+    position: relative;
+    padding: 0 20px 0 28px ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    min-height: 38px;
+    background-color: #fff;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    outline: none;
+}
+
+.input.max {
+    resize: none;
+}
+
+.input:focus {
+    border: 1px solid #007BFF;
+}
+
+.text {
+    font-size: 13px;
+    line-height: 18px;
+    color: #969696;
+}
+
+.item {
+    list-style: none;
+}
+
+.text.footer {
+    max-width: 410px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text.login {
+    max-width: 173px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 22px;
+    color: #545454;
+}
+
+.link {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.link.login {
+    font-weight: 600;
+}
+
+.item.singup {
+    border-bottom: 1px solid #E4E4E4;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+

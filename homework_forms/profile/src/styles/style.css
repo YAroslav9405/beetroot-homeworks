@@ -1,0 +1,146 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1,
+ul,
+::after,
+::before,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   font-family: 'Inter', sans-serif;
+}
+
+.title {
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1C1C1C;
+}
+
+.container {
+    width: 100%;
+    max-width: 530px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.form-item {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.img {
+    margin-right: 20px;
+}
+
+.form-item.img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.download-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 9px;
+}
+
+.custom-input {
+    position: relative;
+    max-width: 138px;
+    max-height: 30px;
+    margin-right: 10px;
+}
+
+.custom-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-input::before {
+    content: '\1F4F7';
+    display: inline-block;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #E4E4E4;
+    text-align: end;
+    border-radius: 6px;
+    padding: 4px 6px;
+    min-width: 138px;
+    min-height: 30px;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+.button {
+    min-width: 30px;
+    min-height: 30px;
+    border: 1px solid #E4E4E4;
+    background-color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.download-text {
+    font-size: 13px;
+    line-height: 18px;
+    color: #969696;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list-item {
+    list-style: none;
+    min-width: 245px;
+    margin: 0;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.label {
+    font-size: 15px;
+    line-height: 22px;
+    color: #545454;
+    padding-bottom: 7px;
+} 
+
+.input {
+    min-height: 38px;
+    background-color: #fff;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    outline: none;
+}
+
+.input.min {
+    resize: none;
+    min-width: 150px;
+}
+
+.input:focus,
+.custom-input:hover::before,
+.button:hover
+ {
+    border: 1px solid #007BFF;
+}
+
+
+ 
