@@ -1,0 +1,60 @@
+.footer {
+    min-height: 194px;
+    background-color: #16133D;
+}
+
+.img-footer {
+    padding-top: 36px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 20px 0 15px 0 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    .footer-item {
+        margin-right: 8px;
+    }
+}
+
+.icon-holder {
+    background-color: #EFEEF3;
+    width: 100%;
+    max-width: 60px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: #3DB370;
+    }
+}
+
+.svg-sprite {
+    background-image: url("../img/sprite-icon.svg");
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+
+    &.facebook {
+        background-position: -14px -16px;
+    }
+
+    &.twiter {
+        background-position: -97px -18px;
+    }
+
+    &.ball {
+        background-position: -439px -15px;
+    }
+
+    &.linked {
+        background-position: -522px -18px;
+    }
+
+    &.amazon {
+        background-position: -183px -182px;
+    }
+
+}
