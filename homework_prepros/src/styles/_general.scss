@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+ul,
+a,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-roboto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1185px;
+    padding: 0 15px;
+    margin: 0 auto;
+}

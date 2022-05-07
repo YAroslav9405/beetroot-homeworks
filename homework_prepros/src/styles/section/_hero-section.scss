@@ -1,0 +1,77 @@
+.text-holder {
+    font-size: 16px;
+    line-height: 21px;
+    color: #7690A8;
+    margin-bottom: 17px;
+}
+
+.title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 40px;
+    line-height: 52px;
+    color: #16133D;
+    margin-bottom: 35px;
+}
+
+.experience-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 69px;
+}
+
+.expirience-item {
+    width: 33%;
+    max-width: 360px;
+    min-height: 347px;
+    border: 1px solid #E5EAF4;
+    border-radius: 8px;
+    padding: 41px 45px 0 41px;
+
+    &:hover {
+        border: 1px solid #3DB370;
+    } 
+}
+
+.expirience-holder {
+    margin-bottom: 14px;
+    &.txt {
+        margin-bottom: 29px;
+    }
+    &.link {
+        padding-bottom: 46px;
+    }
+} 
+
+.learn-link {
+    text-decoration: none;
+    color: black;
+}
+
+.svg-holder {
+    width: 100%;
+    max-width: 64px;
+    max-height: 64px;
+    padding: 14px 9px 14px 16px;
+    border: 1px solid rgba(21, 101, 216, 0.1);
+    border-radius: 16px;
+    margin-bottom: 28px;
+
+    &.house {
+        padding: 12px 12px 15px 12px;
+    }
+    &.app {
+        padding: 16px 20px 11px 20px;
+    }
+
+    &:hover {
+        border: 1px solid #3DB370;
+    } 
+}
+
+.svg {
+    .last:hover {
+        fill: green;
+    }
+}
