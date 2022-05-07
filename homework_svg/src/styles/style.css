@@ -37,7 +37,7 @@ body {
     padding-bottom: 45px;
 }
 
-.text {
+.text-holder {
     font-size: 16px;
     line-height: 21px;
     color: #7690A8;
@@ -72,12 +72,8 @@ body {
     border: 1px solid #3DB370;
 }
 
-.expirience-text {
+.expirience-holder {
     margin-bottom: 29px;
-}
-
-.expirience-title{
-    margin-bottom: 14px;
 } 
 
 .learn-link {
@@ -148,7 +144,7 @@ body {
 }
 
 .icon-holder:hover {
-    background-color: #8de1a5;
+    background-color: #3DB370;
 }
 
 .svg-sprite.facebook {
