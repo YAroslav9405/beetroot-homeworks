@@ -19,7 +19,6 @@
     margin-bottom: 15px;
 
     @include media ('>=tablet') {
-        float: left;
         width: 50%;
     }
 

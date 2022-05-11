@@ -117,7 +117,6 @@ body {
 }
 @media (min-width: 768px) {
   .hero-column {
-    float: left;
     width: 50%;
   }
 }
