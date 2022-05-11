@@ -87,6 +87,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 70px;
+
+         @include media ('>=tablet') {
+        margin-bottom: 210px;
+    }
     
     }
 }
@@ -95,11 +100,6 @@
     &.btn-tools {
         font-weight: 700;
         padding: 15px 34px;
-        margin-bottom: 70px;
-    }
-
-    @include media ('>=tablet') {
-        margin-bottom: 50px;
-        margin-bottom: 210px;
-    }
+        
+    }   
 }

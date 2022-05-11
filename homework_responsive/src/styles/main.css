@@ -294,18 +294,17 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 70px;
+}
+@media (min-width: 768px) {
+  .btn-item.tools {
+    margin-bottom: 210px;
+  }
 }
 
 .btn.btn-tools {
   font-weight: 700;
   padding: 15px 34px;
-  margin-bottom: 70px;
-}
-@media (min-width: 768px) {
-  .btn {
-    margin-bottom: 50px;
-    margin-bottom: 210px;
-  }
 }
 
 @media (min-width: 768px) {
