@@ -51,3 +51,10 @@ body {
     border-radius: 4px;
     padding: 10px 25px;
 }
+
+.btn-white {
+    @extend .btn;
+    border: 1px solid #BCD0E5;
+    color: #173A56;
+    background-color: #fff;
+}
