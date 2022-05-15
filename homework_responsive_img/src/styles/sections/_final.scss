@@ -1,0 +1,15 @@
+.final {
+    .project {
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    .project-text {
+        padding-top: 48px;
+
+        @include media ('>=tablet') {
+            padding-top: 50px;
+            margin-bottom: 128px;
+        }
+    }
+}
