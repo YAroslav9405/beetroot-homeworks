@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+ul,
+a,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1150px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: $font-lato;
+}
