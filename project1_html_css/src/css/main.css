@@ -37,9 +37,13 @@ body {
 .header {
   background-color: #5474FD;
   position: fixed;
-  left: 0;
-  right: 0;
+  left: 8px;
+  right: 8px;
   top: 0;
+  padding: 32px 0 25px;
+  min-width: 304px;
+  display: block;
+  z-index: 1;
 }
 .header .container {
   position: relative;
@@ -54,7 +58,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 32px 15px 25px;
+}
+.header.active {
+  z-index: 1;
+  height: 100vh;
 }
 .header.active .nav-holder {
   opacity: 1;
@@ -91,7 +98,6 @@ body {
   right: 0;
   background-color: #5474FD;
   height: 100vh;
-  z-index: 1;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
@@ -144,6 +150,7 @@ body {
   }
 }
 .nav-holder .nav-link {
+  font-family: "Aleo", sans-serif;
   font-size: 14px;
   line-height: 26px;
   color: #fff;
@@ -199,10 +206,172 @@ body {
 }
 
 .hero-section {
+  padding-top: 73px;
+}
+.hero-section .background-holder {
   background-image: url("../img/header.svg");
   background-repeat: no-repeat;
-  max-width: 100%;
-  background-size: cover;
   height: 100vh;
-  background-position: 0 73px;
+  background-size: cover;
+  display: block;
+  background-position: center;
+  padding-top: 110px;
+  min-width: 304px;
+}
+@media (min-width: 769px) {
+  .hero-section .background-holder {
+    padding-top: 210px;
+  }
+}
+.hero-section .title {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0px;
+  color: #fff;
+  margin-bottom: 11px;
+}
+@media (min-width: 768px) {
+  .hero-section .title {
+    font-size: 48px;
+    letter-spacing: 4.8px;
+    padding-top: 37px;
+  }
+}
+@media (min-width: 769px) {
+  .hero-section .title {
+    padding-top: 67px;
+  }
+}
+.hero-section .text-holder-anywer {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #FFFFFF;
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  .hero-section .text-holder-anywer {
+    margin-bottom: 48px;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 6.82px;
+  }
+}
+.hero-section .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 107px;
+}
+.hero-section .form .span {
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  display: block;
+  background-size: cover;
+  width: 22px;
+  height: 24px;
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
+}
+.hero-section .input {
+  width: 100%;
+  max-width: 283px;
+  min-height: 43px;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #999999;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .hero-section .input {
+    max-width: 503px;
+    min-height: 63px;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    margin: 0;
+  }
+}
+.hero-section .btn-submit {
+  position: relative;
+  background: #5474FD;
+  font-family: "Aleo", sans-serif;
+  border: none;
+  display: block;
+  width: 100%;
+  max-width: 123px;
+  min-height: 43px;
+  border: 2px solid #fff;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-right: 30px;
+  margin-right: -21px;
+}
+@media (min-width: 768px) {
+  .hero-section .btn-submit {
+    max-width: 153px;
+    min-height: 63px;
+  }
+}
+.hero-section .link {
+  position: relative;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (min-width: 768px) {
+  .hero-section .link {
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+  }
+}
+.hero-section .link span::after {
+  content: "^";
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  top: 15px;
+  right: 50%;
+}
+
+.choose-us {
+  background-image: url("../img/choose-us.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  min-height: 685px;
+  background-position: center;
+  min-width: 304px;
 }

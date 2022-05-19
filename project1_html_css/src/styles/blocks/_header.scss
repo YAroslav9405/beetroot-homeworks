@@ -1,9 +1,13 @@
 .header {
      background-color: #5474FD;
      position: fixed;
-     left: 0;
-     right: 0;
+     left: 8px;
+     right: 8px;
      top: 0;
+     padding: 32px 0 25px;
+     min-width: 304px;
+     display: block;
+     z-index: 1;
 
     .container {
         position: relative;
@@ -11,10 +15,13 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        padding: 32px 15px 25px;
+
     }
 
     &.active {
+        z-index: 1;
+        height: 100vh;
+        
         .nav-holder {
             opacity: 1;
             visibility: visible;
@@ -54,7 +61,6 @@
     right: 0;
     background-color: #5474FD;
     height: 100vh;
-    z-index: 1;
     transform: translateY(-100%);
 
     @include media ('>=tablet') {
@@ -94,6 +100,7 @@
     }
 
     .nav-link {
+        font-family: $font-aleo;
         font-size: 14px;
         line-height: 26px;
         color: #fff;
