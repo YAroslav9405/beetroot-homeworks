@@ -36,7 +36,10 @@ body {
 
 .header {
   background-color: #5474FD;
-  position: sticky;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 .header .container {
   position: relative;
@@ -193,4 +196,13 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.hero-section {
+  background-image: url("../img/header.svg");
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-size: cover;
+  height: 100vh;
+  background-position: 0 73px;
 }
