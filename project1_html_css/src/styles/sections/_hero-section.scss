@@ -2,14 +2,13 @@
     padding-top: 73px;
 
     .background-holder {
-        background-image: url("../img/header.svg");
         background-repeat: no-repeat;
         height: 100vh;
         background-size: cover;
         display: block;
         background-position:center;
         padding-top: 110px;
-        min-width: 304px;
+        min-width: 300px;
 
         @include media ('>tablet') {
             padding-top: 210px;
@@ -30,7 +29,7 @@
 
         @include media ('>=tablet') {
             font-size: 48px;
-            letter-spacing: 4.8px;
+            letter-spacing: 5px;
             padding-top: 37px;
         }
 
@@ -51,7 +50,7 @@
             margin-bottom: 48px;
             font-size: 22px;
             line-height: 26px;
-            letter-spacing: 6.82px;
+            letter-spacing: 7px;
         }
     }
     
@@ -95,7 +94,7 @@
             min-height: 63px;
             font-size: 14px;
             line-height: 26px;
-            letter-spacing: 2.8px;
+            letter-spacing: 3px;
             margin: 0;
         }
 
@@ -103,7 +102,7 @@
     
     .btn-submit {
         position: relative;
-        background: #5474FD;
+        background: $blue;
         font-family: $font-aleo;
         border: none;
         display: block;
@@ -113,7 +112,7 @@
         border: 2px solid #fff;
         font-size: 14px;
         line-height: 26px;
-        letter-spacing: 1.4px;
+        letter-spacing: 1px;
         text-transform: uppercase;
         color: #fff;
         padding-right: 30px;
@@ -141,7 +140,7 @@
         @include media ('>=tablet') {
             font-size: 14px;
             line-height: 26px;
-            letter-spacing: 2.8px;
+            letter-spacing: 3px;
         }
 
         span::after {

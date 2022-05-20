@@ -23,3 +23,18 @@ p {
 body {
     font-family: $font-josefin;
 }
+
+.btn {
+    font-family: $font-aleo;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(45deg, #496BFE 39%, #5474fd 40%, #5474fd 51%, #5474fd 100%);
+    min-height: 63px;
+    min-width: 228px;
+    padding: 18px 33px;
+        
+}

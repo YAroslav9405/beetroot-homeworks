@@ -1,11 +1,11 @@
 .header {
-     background-color: #5474FD;
+     background-color: $blue;
      position: fixed;
      left: 8px;
      right: 8px;
      top: 0;
      padding: 32px 0 25px;
-     min-width: 304px;
+     min-width: 300px;
      display: block;
      z-index: 1;
 
@@ -59,7 +59,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: #5474FD;
+    background-color: $blue;
     height: 100vh;
     transform: translateY(-100%);
 
