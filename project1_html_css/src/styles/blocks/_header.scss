@@ -1,0 +1,157 @@
+.header {
+     background-color: $blue;
+     position: fixed;
+     left: 8px;
+     right: 8px;
+     top: 0;
+     padding: 32px 0 25px;
+     min-width: 300px;
+     display: block;
+     z-index: 1;
+
+    .container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &.active {
+        z-index: 1;
+        height: 100vh;
+        
+        .nav-holder {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .nav-opener {
+            span {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            &::before {
+                transform: rotate(45deg);
+                top: 0px;
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+                bottom: 13px;
+            }
+        }
+    }
+}
+
+.logo-holder {
+    margin-left: -15px;
+}
+
+.nav-holder {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $blue;
+    height: 100vh;
+    transform: translateY(-100%);
+
+    @include media ('>=tablet') {
+        opacity: 1;
+        visibility: visible;
+        position: static;
+        padding: 0;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        transform: translateY(0);
+    }
+    
+    .nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        @include media ('>=tablet') {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 0 -18px;
+        }
+    }
+
+    .nav-item {
+        margin: 0 0 20px;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include media ('>=tablet') {
+            margin: 0;
+            padding: 0 18px;
+        }
+    }
+
+    .nav-link {
+        font-family: $font-aleo;
+        font-size: 14px;
+        line-height: 26px;
+        color: #fff;
+        display: block;
+        text-decoration: none;
+    }
+    
+    .nav-link:hover {
+        color: $space-gray;
+    }
+}
+
+.btn-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.nav-opener {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    width: 24px;
+    height: 14px;
+    z-index: 2;
+
+    @include media ('>=tablet') {
+        display: none;
+    }
+
+    &::before,
+    &::after,
+    span {
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        height: 1px;
+        background-color: #fff;
+        transition: all ease-in-out 0.3s;
+    }
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+        
+    span {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

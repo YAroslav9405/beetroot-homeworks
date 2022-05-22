@@ -1,0 +1,135 @@
+.choose-us {
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        min-height: 685px;
+        background-position:center;
+        min-width: 300px;
+        color: $space-gray;
+
+        .container {
+                 @include media ('>=tablet') {
+                        display: flex;
+                        flex-wrap: wrap;
+                }
+        }
+
+       
+        .text-holder {
+                font-size: 12px;
+                line-height: 22px;
+                margin: 0 auto 20px;
+                letter-spacing: 1px;
+                color: #E8E8E8;
+                max-width: 220px;
+
+                @include media ('>=tablet') {
+                        font-size: 16px;
+                        line-height: 26px;
+                        width:  100%;
+                        max-width: 560px;
+                        letter-spacing: 2px;
+                        margin: 0 0 45px;
+
+                }
+        }
+
+        .columns {
+                @include media ('>=tablet') {
+                         width: 50%;
+                }
+        }
+
+        .btn-holder {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 20px;
+
+                @include media ('>=tablet') {
+                        justify-content: flex-start;
+                        margin: 0px;   
+                }
+        }
+
+        .img-holder {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+
+                &.mountains {
+                        justify-content: flex-start; 
+                }
+
+                @include media ('>=tablet') {
+                        padding: 150px 90px 0 0;
+
+                        &.mountains {
+                                padding: 10px 0 0;
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: flex-end; 
+                        }
+                }
+
+                @include media ('>tablet') {
+                        padding: 117px 90px 0 0;
+
+                        &.mountains {
+                                padding: 10px 0 0;
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: flex-end; 
+                        }
+                }
+        }
+
+        .image {
+                max-width: 190px;
+                padding-top: 5px;
+                transition: all 0.7s ease-in-out 0s;
+                
+                @include media ('>=tablet') {
+                        max-width: 250px;
+                        padding: 0px;
+                }
+
+                @include media ('>tablet') {
+                        max-width: 350px;
+                        padding: 0;
+                }
+        }
+
+        .image:hover {
+                // transform: rotate(360deg);
+                transform: rotateY(180deg);
+        }
+
+}
+
+.choose-title {
+                
+        font-family: $font-aleo;
+        font-size: 28px;
+        line-height: 18px;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 50px;
+        margin-bottom: 30px;
+
+        @include media ('>=tablet') {
+                font-size: 36px;
+                line-height: 26px;
+                padding-top: 100px;
+                margin-bottom: 50px;
+                text-align: start;
+        }
+
+        @include media ('>tablet') {
+                font-size: 36px;
+                line-height: 26px;
+                padding-top: 211px;
+                margin-bottom: 50px;
+                text-align: start;
+        }
+}

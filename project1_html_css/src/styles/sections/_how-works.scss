@@ -1,0 +1,107 @@
+.how-works {
+    display: block;
+    min-height: 340px;
+    background-color: #333;
+    min-width: 300px;
+    color: $space-gray;
+
+    .container {
+
+        @include media ('>=tablet') {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+    }
+
+
+    .works-holder {
+        position: relative;
+        padding-top: 30px;
+
+        @include media ('>=tablet') {
+            width: calc(100%/3);
+            padding-top: 99px;
+        }
+       
+    }
+
+    .img-works {
+        max-width: 44px;
+        max-height: 44px;
+        display: block;
+        margin: 0 auto 15px;
+
+        @include media ('>=tablet') {
+            width: 100%;
+            max-width: 64px;
+            max-height: 64px;
+            margin: 0 auto 35px;
+        }
+    }
+
+    .strong  {
+        font-family: $font-aleo;
+        font-size: 22px;
+        line-height: 12px;
+        text-align: center;
+
+        @include media ('>=tablet') {
+            font-size: 36px;
+            line-height: 26px;
+        }
+    }
+
+    .now {
+        position: absolute;
+        padding: 60px 53px;
+        background-color: transparent;
+        border-left: 1px solid $space-gray;
+        top: 34px;
+        left: 58px;
+        border-radius: 100%;
+
+        @include media ('>=tablet') {
+            border-top: 1px solid $space-gray;
+            padding: 49px 130px;
+            border-left: none;
+            top: 38px;
+            left: 43%;
+        }
+
+        @include media ('>tablet') {
+            border-top: 1px solid $space-gray;
+            padding: 49px 150px;
+            border-left: none;
+            top: 38px;
+            left: 60%;
+        }
+    }
+
+    .down {
+        position: absolute;
+        padding: 60px 53px;
+        background-color: transparent;
+        border-right: 1px solid $space-gray;
+        top: 51px;
+        right: 58px;
+        border-radius: 100%;
+
+
+        @include media ('>=tablet') {
+            border-top: 1px solid $space-gray;
+            padding: 49px 130px;
+            border-right: none;
+            top: 38px;
+            left: 52%;
+        }
+
+        @include media ('>tablet') {
+            border-right: none;
+            border-top: 1px solid $space-gray;
+            padding: 49px 150px;
+            top: 38px;
+            left: 60%;
+        }
+    }
+}
