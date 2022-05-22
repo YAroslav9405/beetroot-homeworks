@@ -107,6 +107,10 @@
         display: block;
         text-decoration: none;
     }
+    
+    .nav-link:hover {
+        color: $space-gray;
+    }
 }
 
 .btn-holder {

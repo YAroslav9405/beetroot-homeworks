@@ -1,0 +1,75 @@
+.spain-house {
+    @extend.choose-us;
+    min-height: 700px;
+
+    .window {
+        background-color: #232323e6;
+        max-width: 270px;
+        transform: translatey(115px);
+        margin: 0 auto;
+        color: $space-gray;
+        padding: 0 15px;
+        display: block;
+
+        @include media ('>=tablet') {
+            margin: 0;
+            transform: translatey(227px);
+            width: 100%;
+            max-width: 543px;
+        }
+    }
+
+    .window:hover {
+        border: 1px solid $blue;
+    }
+
+    .spain-strong {
+        font-size: 18px;
+        line-height: 24px;
+        padding-top: 15px;
+        margin-bottom: 10px;
+
+        @include media ('>=tablet') {
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 1px;
+            padding-top: 49px;
+            margin-bottom: 23px;
+        }
+    }
+
+    .title-spain {
+        text-transform: uppercase;
+        color: #fff;
+        line-height: 25px;
+        font-size: 18px;
+        margin: 0 0 5px;
+
+        @include media ('>=tablet') {
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 13px;
+        }
+    }
+
+    .txt-holder {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 15px;
+
+        @include media ('>=tablet') {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 46px;
+        }
+    }
+
+    .btn {
+        margin-bottom: 10px;
+        text-align: center;
+
+        @include media ('>=tablet') {
+            margin-bottom: 50px;
+        }
+    }
+}

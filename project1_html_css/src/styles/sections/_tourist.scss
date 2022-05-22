@@ -1,0 +1,99 @@
+.tourist {
+    @extend.choose-us;
+    min-height: 731px;
+    color: $space-gray;
+
+    .title-holder {
+        @include media ('>=tablet') {
+         margin: 0 auto;
+         display: block;
+        }
+    }
+
+    .tourist-title {
+        @extend.choose-title;
+        line-height: 35px;
+        padding-top: 30px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include media ('>=tablet') {
+            line-height: 26px;
+            padding-top: 128px;
+            margin-bottom: 91px;
+        }
+    }
+
+    .tourist-wrap {
+
+        @include media ('>1024px') {
+           display: flex;
+           flex-wrap: wrap;
+        }
+    }
+
+    .image-holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .img {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 40px;  
+        
+        @include media ('>=tablet') {
+           width: 100%;
+           max-width: 445px;
+           margin-bottom: 10px;
+        }
+    }
+
+    .blockquote {
+        background-color: #333;
+        padding: 20px 15px;
+        margin: 0;
+
+        @include media ('>1024px') {
+           margin: 0;
+           width: 100%;
+           max-width: 668px;
+           padding: 0 25px 33px 65px;
+        }
+    }
+
+    .title-spain {
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+
+        @include media ('>=tablet') {
+            font-size: 20px;
+            line-height: 26px;
+            padding-top: 49px;
+            margin-bottom: 8px;
+        }
+
+    }
+
+    .txt-holder {
+        @include media ('>=tablet') {
+           line-height: 26px;        
+        }
+    } 
+
+    .icon-quote-left {
+        color: $blue;
+        font-size: 24px;
+
+        @include media ('>=tablet') {
+            font-size: 36px;
+            line-height: 26px;
+        }
+    }
+}
+

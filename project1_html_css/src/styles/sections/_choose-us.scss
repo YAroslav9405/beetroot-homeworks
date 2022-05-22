@@ -5,9 +5,10 @@
         min-height: 685px;
         background-position:center;
         min-width: 300px;
+        color: $space-gray;
 
         .container {
-                @include media ('>=tablet') {
+                 @include media ('>=tablet') {
                         display: flex;
                         flex-wrap: wrap;
                 }
@@ -86,6 +87,7 @@
         .image {
                 max-width: 190px;
                 padding-top: 5px;
+                transition: all 0.7s ease-in-out 0s;
                 
                 @include media ('>=tablet') {
                         max-width: 250px;
@@ -97,6 +99,12 @@
                         padding: 0;
                 }
         }
+
+        .image:hover {
+                // transform: rotate(360deg);
+                transform: rotateY(180deg);
+        }
+
 }
 
 .choose-title {

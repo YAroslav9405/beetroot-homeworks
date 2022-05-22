@@ -3,6 +3,7 @@
     min-height: 340px;
     background-color: #333;
     min-width: 300px;
+    color: $space-gray;
 
     .container {
 
@@ -43,7 +44,6 @@
         font-family: $font-aleo;
         font-size: 22px;
         line-height: 12px;
-        color: #FFFFFF;
         text-align: center;
 
         @include media ('>=tablet') {
@@ -56,13 +56,21 @@
         position: absolute;
         padding: 60px 53px;
         background-color: transparent;
-        border-left: 1px solid #808080;
+        border-left: 1px solid $space-gray;
         top: 34px;
         left: 58px;
         border-radius: 100%;
 
         @include media ('>=tablet') {
-            border-top: 1px solid #808080;
+            border-top: 1px solid $space-gray;
+            padding: 49px 130px;
+            border-left: none;
+            top: 38px;
+            left: 43%;
+        }
+
+        @include media ('>tablet') {
+            border-top: 1px solid $space-gray;
             padding: 49px 150px;
             border-left: none;
             top: 38px;
@@ -74,14 +82,23 @@
         position: absolute;
         padding: 60px 53px;
         background-color: transparent;
-        border-right: 1px solid #808080;
+        border-right: 1px solid $space-gray;
         top: 51px;
         right: 58px;
         border-radius: 100%;
 
+
         @include media ('>=tablet') {
+            border-top: 1px solid $space-gray;
+            padding: 49px 130px;
             border-right: none;
-            border-top: 1px solid #808080;
+            top: 38px;
+            left: 52%;
+        }
+
+        @include media ('>tablet') {
+            border-right: none;
+            border-top: 1px solid $space-gray;
             padding: 49px 150px;
             top: 38px;
             left: 60%;

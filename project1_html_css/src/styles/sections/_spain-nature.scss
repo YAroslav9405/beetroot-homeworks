@@ -1,0 +1,11 @@
+.spain-nature {
+    @extend.spain-house;
+
+    .container {
+        @include media ('>=tablet') {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+    }
+}
