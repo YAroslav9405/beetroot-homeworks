@@ -10,6 +10,7 @@
         color: $space-gray;
         padding: 0 15px;
         display: block;
+        border: 1px solid transparent;
 
         @include media ('>=tablet') {
             margin: 0;

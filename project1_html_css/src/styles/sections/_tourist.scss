@@ -3,6 +3,12 @@
     min-height: 731px;
     color: $space-gray;
 
+    .tourist-column {
+        @include media ('>=tablet') {
+            min-height: 284px;
+        }
+    }
+
     .title-holder {
         @include media ('>=tablet') {
          margin: 0 auto;
@@ -50,6 +56,7 @@
            width: 100%;
            max-width: 445px;
            margin-bottom: 10px;
+           min-height: 284px;
         }
     }
 
@@ -62,7 +69,8 @@
            margin: 0;
            width: 100%;
            max-width: 668px;
-           padding: 0 25px 33px 65px;
+           padding: 0 25px 0 65px;
+           min-height: 284px;
         }
     }
 
